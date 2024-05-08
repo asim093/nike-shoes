@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <label class="logo">
+            <img src="./images/logo.jpg" alt="">
+        </label>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="custom-div" id="clip-path"></div>
+
+    <div class="hero-section">
+        <div class="text-content">
+            <h1>NIKE <span id="span">𝓢𝓗𝓞𝓔𝓢</span></h1>
+            <p>Nike is a renowned global sportswear company, celebrated for its innovative and stylish footwear. With a
+                rich history dating back to the 1960s, Nike has consistently pushed the boundaries of shoe design and
+                technology. From iconic classics like the Air Jordan to cutting-edge running shoes like the Nike Air
+                Zoom series, the company's commitment to performance and fashion has made it a favorite among athletes
+                and sneaker enthusiasts alike. </p>
+
+            <div class="buttons-group">
+                <div class="button">
+                    <button>BUY NOW</button>
+                </div>
+
+                <div class="social-icons">
+                    <span><i class="fa-brands fa-facebook"></i></span>
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                    <span><i class="fa-brands fa-instagram"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="images-slider">
+            <div class="img"><img src="./images/shoes-1.png" alt=""></div>
+            <div class="images">
+                
+                <div><img src="./images/shoes-1.png" alt=""></div>
+                <div class="shoes-2"><img src="./images/shoes-2.png" alt=""></div>
+                <div class="shoes-3"><img src="./images/shoes-3.png" alt=""></div>
+                <div><img src="./images/shoes-4.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="animation-section">
+
+        <div class="animate">
+            <span><img src="./images/brand-10.png" alt="">&nbsp; &nbsp; &nbsp;&nbsp;<img
+                    src="./images/brand-5.png" alt=""> &nbsp; &nbsp;&nbsp;&nbsp; <img
+                    src="./images/brand-9.png" alt=""> &nbsp; &nbsp;&nbsp;&nbsp; <img
+                    src="./images/brand-8.png" alt=""> &nbsp; &nbsp;&nbsp; &nbsp;<img
+                    src="./images/brand-7.png" alt=""> &nbsp; &nbsp;&nbsp;&nbsp;</span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".images").slick({
+                autoplay: true,
+                dots: true,
+                speed: 1000,
+            });
+        });
+    </script>
+</body>
+
+</html>
